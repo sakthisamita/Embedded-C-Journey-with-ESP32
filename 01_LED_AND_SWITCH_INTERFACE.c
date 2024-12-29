@@ -18,7 +18,6 @@ void app_main (void)
     gpio_set_pull_mode (button,GPIO_PULLUP_ONLY);  // Configure the button as pull up device
     gpio_set_direction (button, GPIO_MODE_INPUT);  // Configure pin 2 as input
 
-
     while (true) {
         int x = gpio_get_level (button);
         if (x==false) {
